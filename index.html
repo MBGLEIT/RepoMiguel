@@ -2,9 +2,181 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Practica GitHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroScoot — Patinetes Eléctricos</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #00e5ff;
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      color: #00e5ff;
+      letter-spacing: 2px;
+    }
+
+    header span {
+      color: #aaa;
+      font-size: 0.95em;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+    }
+
+    .hero h2 {
+      font-size: 2.4em;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      color: #aaa;
+    }
+
+    .productos {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 50px 40px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      width: 280px;
+      padding: 30px 24px;
+      text-align: center;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #00e5ff;
+    }
+
+    .card .emoji {
+      font-size: 3.5em;
+      margin-bottom: 16px;
+    }
+
+    .card h3 {
+      font-size: 1.3em;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+
+    .card .marca {
+      font-size: 0.85em;
+      color: #00e5ff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+
+    .card p {
+      font-size: 0.9em;
+      color: #999;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .card .precio {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #00e5ff;
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      display: block;
+      padding: 12px;
+      background-color: #00e5ff;
+      color: #0f0f0f;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1em;
+      transition: background-color 0.2s;
+    }
+
+    .card a:hover {
+      background-color: #00b8d4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #555;
+      font-size: 0.85em;
+      border-top: 1px solid #1f1f1f;
+    }
+  </style>
 </head>
 <body>
-  <h1>Practica GitHub</h1>
+
+  <header>
+    <h1>⚡ ElectroScoot</h1>
+    <span>Los mejores patinetes eléctricos</span>
+  </header>
+
+  <section class="hero">
+    <h2>Muévete diferente</h2>
+    <p>Descubre nuestra selección de patinetes eléctricos de las mejores marcas</p>
+  </section>
+
+  <section class="productos">
+
+    <div class="card">
+      <div class="emoji">🛴</div>
+      <div class="marca">Xiaomi</div>
+      <h3>Mi Scooter 4 Pro</h3>
+      <p>Hasta 45 km de autonomía, motor de 300W y freno E-ABS. Ideal para el día a día.</p>
+      <div class="precio">499 €</div>
+      <a href="https://www.mi.com/es" target="_blank">Comprar en Xiaomi →</a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🛴</div>
+      <div class="marca">Segway</div>
+      <h3>Ninebot Max G2</h3>
+      <p>70 km de autonomía, neumáticos antipinchazos y pantalla LCD integrada.</p>
+      <div class="precio">799 €</div>
+      <a href="https://www.segway.com" target="_blank">Comprar en Segway →</a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🛴</div>
+      <div class="marca">Cecotec</div>
+      <h3>Bongo Serie Z</h3>
+      <p>Motor de 800W, 40 km de autonomía y app móvil para control total.</p>
+      <div class="precio">349 €</div>
+      <a href="https://www.cecotec.es" target="_blank">Comprar en Cecotec →</a>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>ElectroScoot © 2024 — Portal de demostración. Sin sistema de pago real.</p>
+  </footer>
+
 </body>
 </html>
